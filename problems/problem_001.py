@@ -9,4 +9,13 @@
 # problem to get a good feel for how to solve it.
 
 def minimum_value(value1, value2):
-    pass
+    if value1 < value2:
+        return value1
+    elif value1 > value2:
+        return value2
+    return value1
+
+#test
+print(minimum_value(1,2))   #print 1
+print(minimum_value(2,1))   #print 1
+print(minimum_value(2,2))   #print 2
