@@ -13,4 +13,11 @@
 # Look up the zip function to help you with this problem.
 
 def pairwise_add(list1, list2):
-    pass
+    zipped = zip(list1, list2)
+    sums = []
+    for a,b in zipped:
+        sum = a + b
+        sums.append(sum)
+    return sums
+
+print(pairwise_add([100, 200, 300],[ 10, 1, 180]))

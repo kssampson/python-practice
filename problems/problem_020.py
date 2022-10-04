@@ -3,4 +3,10 @@
 # to 50% of the number of people in the members list.
 
 def has_quorum(attendees_list, members_list):
-    pass
+
+    if len(attendees_list) >= (len(members_list)/2):
+        return True
+    else:
+        return False
+
+print(has_quorum(["Joe", "Mike", "Carla"], ["Pa", "Cat"]))

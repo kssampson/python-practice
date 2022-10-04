@@ -15,5 +15,25 @@
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
 
-def sum_of_first_n_even_numbers(n):
-    pass
+
+
+
+
+
+# #def sum_of_first_n_even_numbers(limit):
+#     #sum = 0
+#     #limit = range(limit + 1)
+#     #for number in limit:
+#         #if number %2 == 0:
+#             #sum = sum + number
+#     return sum
+# #print(sum_of_first_n_even_numbers(5))
+
+
+def sum_of_first_n_numbers(limit):
+    sum = 0
+    limit = range(limit + 1)
+    for number in limit:
+        sum = sum + number
+    return sum*2
+print(sum_of_first_n_numbers(5))

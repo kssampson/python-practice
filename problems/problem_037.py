@@ -24,4 +24,7 @@
 #     result: "   19"
 
 def pad_left(number, length, pad):
-    pass
+    string = ""
+    pad_len = length - len(str(number))
+    return pad_len*pad + str(number)
+print(pad_left(18, 7 ,"p"))

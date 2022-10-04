@@ -19,5 +19,16 @@
 #
 # Look up the enumerate function to help you with this problem.
 
-def find_indexes(search_list, search_term):
-    pass
+ def find_indexes(search_list, search_term):
+     new_index = []
+     for spot1, spot2 in enumerate(search_list):
+         if value == search_term:
+            new_index.append(spot1)
+    return new_index
+
+
+#print(enumerate([1,2,3,4]))
+# def counted(list):
+#     for count, value in enumerate(list):
+#       return(counted(list))
+# print(counted([1,2,3,4]))

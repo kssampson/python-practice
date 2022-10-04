@@ -14,3 +14,11 @@
 #     * input:   [1, 3, 3, 20, 3, 2, 2]
 #       returns: [1, 3, 20, 2]
 
+def remove_duplicates(numbers):
+   dupes = ""
+   for number in numbers:
+        if number not in dupes:
+             dupes += number
+
+   return dupes
+print(remove_duplicates(1,5,6,1,1,9))

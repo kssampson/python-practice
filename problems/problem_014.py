@@ -11,4 +11,11 @@
 # problem to get a good feel for how to solve it.
 
 def can_make_pasta(ingredients):
-    pass
+    needed = ["flour",
+        and ingredients == "eggs"
+        and ingredients == "oil"):
+        return True
+    else:
+        return False
+
+    print(can_make_pasta(["flour", "eggs", "oil"])

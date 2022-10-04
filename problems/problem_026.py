@@ -13,4 +13,22 @@
 #   * An "F" for any other average
 
 def calculate_grade(values):
-    pass
+    grades = []
+    for value in values:
+        if value >= 90:
+            grades.append("A")
+    
+        elif value >= 80:
+            grades.append("B")
+           
+        elif value >= 70:
+            grades.append("C")
+           
+        elif value >= 60:
+            grades.append("D")
+          
+        else:
+            grades.append("F")
+    return grades
+
+print(calculate_grade([99, 88, 66, 79, 80]))

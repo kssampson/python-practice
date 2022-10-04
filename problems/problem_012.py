@@ -16,4 +16,9 @@
 # problem to get a good feel for how to solve it.
 
 def fizzbuzz(number):
-    pass
+    if number %3 == 0 and number %5 == 0:
+        return "buzz"
+
+print(fizzbuzz(900))
+print(fizzbuzz(65))
+print(fizzbuzz(915))

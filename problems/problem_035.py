@@ -24,4 +24,13 @@
 # at the last one you just wrote unless you really must.
 
 def count_letters_and_digits(s):
-    pass
+    letter_count = 0
+    number_count = 0
+    for character in s:
+        if character.isdigit():
+            number_count += 1
+        if character.isalpha():
+            letter_count += 1
+    return letter_count,number_count
+print(count_letters_and_digits("bna5898aa"))
+print(count_letters_and_digits(""))
