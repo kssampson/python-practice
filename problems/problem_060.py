@@ -13,3 +13,12 @@
 #     * input:   [1, 3, 5, 7]
 #       returns: [1, 3, 5, 7]
 
+
+def only_odds(numbers):
+    list = []
+    for number in numbers:
+        if number %2 != 0:
+            list.append(number)
+    return list
+
+print(only_odds([5, 7, 12, 20, 33]))

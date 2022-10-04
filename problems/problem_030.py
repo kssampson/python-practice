@@ -22,10 +22,9 @@ def find_second_largest(values):
     for value in values:
         if value > second and value < largest:
             second = value
-
     return second
 
-print(find_second_largest([1,6,7,10]))
+print(find_second_largest([1,600,17,110]))
 print(find_second_largest([]))
 
 

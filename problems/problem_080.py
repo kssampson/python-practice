@@ -1,3 +1,34 @@
+from problem_079 import ReceiptItem
+
+class Receipt:
+
+    def __init__(self, rate):
+        self.rate = rate
+        self.items = []
+
+    def add_item(self, item):
+        self.items.append(item)
+
+    def get_subtotal(self):
+        sum = 0
+        for item in self.items:
+            sum += self.get_total()
+        return sum
+
+    def get_total(self):
+        return self.get_subtotal() * (1 + self.rate)
+
+
+
+
+
+item = Receipt(.1)
+item.add_item(ReceiptItem(4, 2.50))
+item.add_item(ReceiptItem(2, 5.00))
+
+print(item.get_subtotal())     # Prints 20
+print(item.get_total())        # Prints 22
+
 # Write a class that meets these requirements.
 #
 # Name:       Receipt

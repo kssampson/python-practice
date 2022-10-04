@@ -12,3 +12,15 @@
 #    * input: [1, 2, 3]
 #      result: [1, 2], [3]
 
+def halve_the_list(lst):
+    list1 = []
+    list2 = []
+    for item in lst:
+        if len(list1) < len(lst)/2:
+            list1.append(item)
+        else:
+            list2.append(item)
+    return list1, list2
+
+
+print(halve_the_list([1, 2, 3, 4]))

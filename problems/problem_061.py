@@ -15,10 +15,9 @@
 #       returns: [1, 3, 20, 2]
 
 def remove_duplicates(numbers):
-   dupes = ""
+   dupes = []
    for number in numbers:
         if number not in dupes:
-             dupes += number
-
+             dupes.append(number)
    return dupes
-print(remove_duplicates(1,5,6,1,1,9))
+print(remove_duplicates([1,5,6,1,1,9]))

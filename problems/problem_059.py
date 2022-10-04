@@ -15,3 +15,13 @@
 #     and 7 into a list
 #   * Use random.choice to select one
 
+from random import choice
+
+def specific_random():
+    list = []
+    for number in range(10,500):
+        if number %35 == 0:
+            list.append(number)
+    return choice(list)
+
+print(specific_random())

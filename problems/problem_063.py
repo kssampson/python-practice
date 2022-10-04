@@ -21,3 +21,16 @@
 # You may want to look at the built-in Python functions
 # "ord" and "chr" for this problem
 
+def shift_letters(word):
+    new_word = ''
+    for letter in word:
+        if letter == 'z':
+            new_word += 'a'
+        elif letter == 'Z':
+            new_word += 'A'
+        else:
+            new_ord = ord(letter) + 1
+            new_chr = chr(new_ord)
+            new_word = new_word + new_chr
+    return new_word
+print(shift_letters("zpoop"))

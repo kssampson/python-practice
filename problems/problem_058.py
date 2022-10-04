@@ -1,3 +1,25 @@
+
+
+def group_cities_by_state(lst):
+    map = {}
+    for item in lst:
+        city, state = item.split(", ")
+        if state not in map:
+            map[state] = []
+        map[state].append(city)
+    return map
+print(group_cities_by_state(["Cleveland, OH", "Columbus, OH", "Chicago, IL"]))
+
+
+    # * input:   ["San Antonio, TX"]
+    #   returns: {"TX": ["San Antonio"]}
+    # * input:   ["Springfield, MA", "Boston, MA"]
+    #   returns: {"MA": ["Springfield", "Boston"]}
+    # * input:   ["Cleveland, OH", "Columbus, OH", "Chicago, IL"]
+    #   returns: {"OH": ["Cleveland", "Columbus"], "IL": ["Chicago"]}
+
+
+
 # Write a function that meets these requirements.
 #
 # Name:       group_cities_by_state
@@ -21,4 +43,3 @@
 #       returns: {"OH": ["Cleveland", "Columbus"], "IL": ["Chicago"]}
 #
 # You may want to look up the ".strip()" method for the string.
-
