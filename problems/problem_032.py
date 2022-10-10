@@ -19,6 +19,7 @@ def sum_of_first_n_numbers(limit):
     sum = 0
     limit = range(limit + 1)
     for number in limit:
-        sum = sum + number
+        sum += number
+        print(number)
     return sum
-print(sum_of_first_n_numbers(5))
+print(sum_of_first_n_numbers(-5))

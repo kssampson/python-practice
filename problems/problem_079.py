@@ -25,3 +25,5 @@ class ReceiptItem:
         return self.total
 
 item = ReceiptItem(10, 3.45)
+
+print(item.get_total())
